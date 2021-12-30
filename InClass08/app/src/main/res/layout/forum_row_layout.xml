@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/forum_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/forum_creator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forum_title" />
+
+    <TextView
+        android:id="@+id/forum_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forum_creator" />
+
+    <TextView
+        android:id="@+id/forum_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forum_text" />
+
+    <TextView
+        android:id="@+id/forum_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/forum_likes"
+        app:layout_constraintStart_toEndOf="@+id/forum_likes" />
+
+    <ImageView
+        android:id="@+id/delete_forum"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/forum_date"
+        app:layout_constraintStart_toEndOf="@+id/forum_date" />
+
+    <ImageView
+        android:id="@+id/button_like"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/delete_forum"
+        app:layout_constraintTop_toTopOf="@+id/delete_forum"
+        app:srcCompat="@drawable/like_not_favorite" />" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
